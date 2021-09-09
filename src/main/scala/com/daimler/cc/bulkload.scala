@@ -25,8 +25,13 @@ object bulkload extends App{
   val valCols = cols.filterNot(x=>x.equals("id"))
 
   val rdd =  df.rdd.map(row =>{
-    (row(0).toString,(row(1).toString,row(2).toString,row(3)))
+    (row(0).toString,(row(1).toString,row(2).toString,row(3),
+      row(4).toString,row(5).toString,row(6).toString,
+      row(7).toString,row(8).toString,row(9).toString))
   })
+
+  rdd.foreach(println)
+  rdd.take(1).map(x=>println(x))
 
   val colfamily = "cf"
   val rdd2 = rdd.flatMap( x => {

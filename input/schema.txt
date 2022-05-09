@@ -1,0 +1,7 @@
++-------------+----------------------------------------------------+
+| table_name  |                        _c1                         |
++-------------+----------------------------------------------------+
+| TABLE1      |     `ID` bigint,    `NAME` VARCHAR(30),    `Sal` bigint     |
+| TABLE2      |     `ID_KM` bigint,    `BRANCH_KM` bigint,    `NAME_KM` VARCHAR(30),	`SAL_KM` bigint  |
+| TABLE3      |     `ID_MK` string,    `BRANCH_MK` bigint,    `NAME_MK` VARCHAR(50)  |
++-------------+----------------------------------------------------+
